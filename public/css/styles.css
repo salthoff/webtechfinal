@@ -1,0 +1,7 @@
+body {background-color: rgb(183, 206, 209);padding: 10px;}
+h1   {color: black;}
+p    {color: black;}
+header{background-color: rgb(70, 70, 155); padding: 10px;margin: 10px;border: 1px solid;}
+#searchbar{padding: 10px; position: relative;margin: 10px;}
+.NoPrint{}
+.scroll{overflow : scroll;}

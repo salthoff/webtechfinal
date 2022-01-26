@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        
+    </style>
+<head>
+    <title> Web Tech IR Page Group 21</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <script language="javascript" src="/js/FrontEnd.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1 id="Title"><a href="/">IR TU GRAZ</a></h1> 
+        <div id = "welcomeDiv" style="padding-bottom: 10px;">Welcome to this wep page.</div>
+        <input class="NoPrint" id="searchbar" type="search" size="relative" placeholder="SEARCH...">
+        <a class="NoPrint" href="/user"><input type="button" value="Profil"></a>
+        <a class="NoPrint" href="/LogIn"><input type="button" value="LogIn or Register"></a>
+        <a class="NoPrint" href="/logout"><input type="button" value="Logout"></a>
+        <a class="NoPrint"><input type="button" value="Print"></a>
+        <input class="NoPrint" type="button" value="Logout"> 
+    </header>
+    <script>
+        var search = document.getElementById('searchbar');
+        search.addEventListener("keyup", function(event){
+            if (event.keyCode === 13){
+                var query = preprocess(search.value)
+                window.location.href = '/?search=' + query;
+            }
+        })
+
+    </script>
+    <footer><a href="/about">About</a></footer>
+</body>
+<html

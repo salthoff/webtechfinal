@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web Tech IR Page Group 21</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <script language="javascript" src="/js/FrontEnd.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="Title"><a href="/">IR TU GRAZ</a></h1> 
+        <div id = "welcomeDiv" style="padding-bottom: 10px;">Welcome to this wep page.</div>
+        <input class="NoPrint" id="searchbar" type="search" size="relative" placeholder="SEARCH...">
+        <a class="NoPrint" href="/user"><input type="button" value="Profil"></a>
+        <a class="NoPrint"><input type="button" value="Print"></a>
+    </header>
+    <script>
+        var search = document.getElementById('searchbar');
+        search.addEventListener("keyup", function(event){
+            if (event.keyCode === 13){
+                var query = preprocess(search.value)
+                window.location.href = '/?search=' + query;
+            }
+        })
+
+    </script>
+    <div>    
+        <h1>Register now</h1>   
+        <form method="POST" action="register">
+            <div class="Register">
+                <label>Username:</label>
+                <input id="username_Register" type="text" placeholder="Enter Username", name="newUsername", required>
+                <label>Password: </label>   
+                <input id="password_Register" type="password" placeholder="Enter Password" name="password" required>
+                <label>Confirm Password: </label>   
+                <input id="password_Register" type="password" placeholder="Enter Password" name="confirmPassword" required>  
+                <button type="submit" formmethod="post">Register</button>  
+            </div>
+
+        </form>
+    
+    </div>
+    
+    <footer><a href="/about">About</a></footer>
+</body>
+</html>

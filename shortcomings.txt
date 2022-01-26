@@ -1,0 +1,10 @@
+What could have been done better!
+
+More robust error handling and status code sending. 
+Status codes should generally be correct but should be looked over
+
+Implementation of scoring system. 
+
+Could have used templates with ejs instead, might be more robust.
+
+Optimizing search algorithm, currently quite slow.
